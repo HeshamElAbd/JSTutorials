@@ -17,7 +17,7 @@ function getInput(){
 	}
 	 else{
 		alert("unknown input detected please !!!, please try again later.")
-		return;
+		return -1;
 	}
 	return input	
 }
@@ -36,5 +36,7 @@ function onlyEven(upper_limit){
 
 function DemoFunction(){
 	upper_limit=getInput()
-	onlyEven(upper_limit)
+	if (upper_limit!=-1){
+		onlyEven(upper_limit)
+	} 
 }
